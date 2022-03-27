@@ -1,10 +1,31 @@
 @import url("https://unpkg.com/mockman-js@latest/dist/style.css");
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+:root {
+  --v1-bg-color:#191A19;
+  --v2-bg-color:#2f302f;
+  --text-color:#F0F6FC;
+  --sec-text-color:#a9aaaa;
+}
 html {
     font-size: 62.5%;
     scroll-behavior: smooth;
+}
+body {
+  background-color: var(--v1-bg-color);
+  color: var(--text-color);
+}
+
+body::-webkit-scrollbar {
+  width: 1rem;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--text-color);
+  border-radius: 1rem;
 }

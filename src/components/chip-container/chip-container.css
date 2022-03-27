@@ -1,0 +1,32 @@
+.chip-container {
+    background-color: var(--v2-bg-color);
+    padding: 1.6rem 2.4rem;
+    overflow-x: auto;
+    white-space: nowrap;
+    border-top: 1px solid var(--text-color);
+    gap: 1rem;
+    position: sticky;
+    top: 8.1rem;
+    z-index: 1;
+}
+
+.chip {
+    background-color: var(--v1-bg-color);
+    cursor: pointer;
+    border-radius: 1.6rem;
+    padding: 0.8rem 2rem;
+    width: fit-content;
+    font-size: 1.4rem;
+}
+.active-chip {
+  background-color: var(--sec-text-color);
+  color: black;
+}
+::-webkit-scrollbar {
+  height: 0.6rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--text-color);
+  border-radius: 1rem;
+} 

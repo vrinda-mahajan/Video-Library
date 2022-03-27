@@ -1,0 +1,63 @@
+.card {
+    background-color: var(--v1-bg-color);
+    width: 31rem;
+    box-shadow: none;
+}
+.card-img {
+    width: 31rem;
+}
+.text-badge {
+    position: absolute;
+    top: 14rem;
+    right: 1rem;
+    padding: 0.4rem 0.8rem;
+    font-size: 1.2rem;
+    background-color: var(--v1-bg-color);
+    opacity: 0.9;
+    border-radius: 3px;
+}
+.card-heading {
+    padding-bottom: 0.8rem;
+}
+.card-header:hover {
+    color: var(--primary-color);
+    cursor: pointer;
+}
+.card-header {
+    margin-left: 1rem;
+}
+.card-footer {
+    font-size: 1.4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--sec-text-color);
+}
+.footer-icon {
+    background-color: var(--v1-bg-color);
+    color: var(--text-color);
+}
+.footer-icon:hover{
+    background-color: var(--v2-bg-color);
+}
+
+.dropdown-section {
+    position: absolute;
+    top: 27rem;
+    right: 5rem;
+    white-space: nowrap;
+    z-index: 3;
+    background-color: var(--v2-bg-color);
+    font-size: 1.6rem;
+    padding: 1rem;
+}
+.dropdown-item {
+    padding: 1rem;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+.dropdown-item:hover{
+    cursor: pointer;
+    background-color: var(--v1-bg-color);
+}
