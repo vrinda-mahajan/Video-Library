@@ -1,4 +1,4 @@
-import "./shrinkedSidebar.css"
+import "./shrinked-sidebar.css"
 import { Link } from "react-router-dom"
 
 const ShrinkedSidebar = () => {

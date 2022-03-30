@@ -20,7 +20,7 @@ const VideoCard = ({videoDetails}) => {
         document.addEventListener("mousedown",(e)=>{
             if(!settingRef.current?.contains(e.target)){
             setDropdown(false)}})
-    })
+    },[dropdown])
 
     const clickHandler = () => {
         videoClickHandler(videoDetails)
@@ -28,7 +28,7 @@ const VideoCard = ({videoDetails}) => {
     }
 
     return (<div className="m1 card text-decor-none">
-        <div onClick={()=>clickHandler()}>
+        <div onClick={clickHandler}>
             <img src={thumbnail} alt={title} className="card-img" />
             <span className="text-badge">{duration}</span>
         </div>
@@ -36,7 +36,7 @@ const VideoCard = ({videoDetails}) => {
         <div className="p1 card-text-container">
             <div className="card-heading flex-r">
                 <img className="avatar-sm avatar" src={channelLogo} alt="user" />
-                <div onClick={()=>clickHandler()}>
+                <div onClick={clickHandler}>
                     <p className="card-header">{title.length>60?`${title.substring(0,48)}...`:title}</p>
                 </div>
             </div>
