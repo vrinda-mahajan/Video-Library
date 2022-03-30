@@ -1,0 +1,32 @@
+.horizontal-card {
+    width: 40rem;
+    height: 10rem;
+}
+.horizontal-card-img {
+    width: 16rem;
+    height: 10rem;
+}
+.horizontal-text-badge {
+    position: absolute;
+    top: 7rem;
+    right: 25rem; 
+    padding: 0.4rem 0.8rem;
+    background-color: var(--v1-bg-color);
+    opacity: 0.9;
+    border-radius: 3px;
+    color: var(--text-color);
+}
+.card-footer{
+    padding: 0 1rem;
+}
+
+.horizontal-dropdown-section {
+    position: absolute;
+    top: 7rem;
+    right: 4rem;
+    white-space: nowrap;
+    z-index: 3;
+    background-color: var(--v2-bg-color);
+    font-size: 1.4rem;
+    padding: 1rem;
+}

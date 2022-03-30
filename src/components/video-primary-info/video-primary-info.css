@@ -1,0 +1,16 @@
+
+.primary-info-section {
+    margin: 1rem;
+    gap: 3rem;
+}
+.primary-info-item{
+    cursor: pointer;
+    font-size: 2rem;
+    margin: 1rem;
+}
+.primary-info-title{
+    width: 70rem;
+}
+.primary-info-text{
+    margin-left: 1rem;
+}
