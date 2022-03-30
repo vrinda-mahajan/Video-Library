@@ -1,0 +1,39 @@
+.nav-container {
+    background-color: var(--v2-bg-color);
+    position: sticky;
+    width: 100%;
+    top: 0;
+    z-index: 99;
+    justify-content: space-between;
+    box-shadow: none;
+}
+.app-name {
+    color: var(--text-color);
+    font-size: 3.2rem;
+    font-family: 'Cormorant Garamond', serif;
+}
+.app-icon {
+    color: var(--primary-color);
+    font-size: 3.6rem;
+    margin-right: 0.2rem;
+}
+.nav-icon {
+    color: var(--text-color);
+    font-size: 2.2rem;
+    padding: 0 3rem ;
+}
+.nav-icon:hover {
+    color: var(--primary-color);
+}
+
+.nav-icon-text {
+    color: var(--text-color);
+    margin-top: -0.8rem;
+}
+.input-container {
+    width: 50%;
+}
+.input-field {
+    background-color: var(--v1-bg-color);
+    color: var(--text-color);
+}
