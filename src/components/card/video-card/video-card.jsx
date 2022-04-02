@@ -27,7 +27,7 @@ const VideoCard = ({videoDetails}) => {
             <div className="card-heading flex-r">
                 <img className="avatar-sm avatar" src={channelLogo} alt="user" />
                 <div onClick={clickHandler}>
-                    <p className="card-header">{title.length>60?`${title.substring(0,48)}...`:title}</p>
+                    <p className="card-header">{title}</p>
                 </div>
             </div>
             <div className="card-footer">

@@ -26,7 +26,7 @@ const HorizontalVideoCard = ({videoDetails}) => {
             </Link>
             <div>
             <Link to={`/watch/${embedId}`} onClick={clickHandler} className="text-decor-none">
-                <p className="card-header">{title.length>60?`${title.substring(0,50)}...`:title}</p>
+                <p className="card-header">{title}</p>
             </Link>
                 <div className="card-footer">
                     <div>
