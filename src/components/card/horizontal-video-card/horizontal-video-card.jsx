@@ -1,26 +1,16 @@
 import "./horizontal-video-card.css"
-import { useVideo } from "contexts/video-context";
-import { useState, useEffect, useRef } from "react"
+import { useState } from "react"
 import { Link, useNavigate } from "react-router-dom";
+import { useVideo, useWatchLater } from "contexts";
 
 const HorizontalVideoCard = ({videoDetails}) => {
+
     const {videoClickHandler} = useVideo();
+    const {addToWatchLater,removeFromWatchLater} = useWatchLater()
     const [dropdown,setDropdown] = useState(false)
     const {_id,title,creator,thumbnail,views,uploadTime,duration,embedId} = videoDetails
     const navigate = useNavigate();
-
-    const dropdownOptions = [
-        {optionText:"Add to watch later",optionIcon:"clock"},
-        {optionText:"Add to Playlist",optionIcon:"circle-play"},
-        {optionText:"Remove from watch later",optionIcon:"trash"}]
     
-    const settingRef = useRef()
-    useEffect(()=>{
-        document.addEventListener("mousedown",(e)=>{
-            if(!settingRef.current?.contains(e.target)){
-            setDropdown(false)}})
-    },[dropdown])
-
     const clickHandler = () => {
         videoClickHandler(videoDetails)
         navigate(`/watch/${_id}`)
@@ -50,12 +40,15 @@ const HorizontalVideoCard = ({videoDetails}) => {
             </div>
         </div>
         
-        {dropdown && <div className="list-non-bullet horizontal-dropdown-section">
-            {dropdownOptions.map(({optionText,optionIcon}) => 
-            <li onClick={()=>setDropdown(prev=>!prev)} key={optionIcon} className="dropdown-item">
-                <i className={`fa-solid fa-${optionIcon}`}></i>
-                <span>{`${optionText}`}</span>
-            </li>)}
+        {dropdown && <div onClick={()=>{setDropdown(prev=>!prev)}} className="list-non-bullet horizontal-dropdown-section">
+            <li onClick={()=>addToWatchLater(videoDetails)} className="dropdown-item">
+                <i className="fa-solid fa-clock"></i>
+                <span>Add to watch later</span>
+            </li>
+            <li onClick={()=>removeFromWatchLater(videoDetails._id)} className="dropdown-item">
+                <i className="fa-solid fa-trash"></i>
+                <span>Remove from watch later</span>
+            </li>
         </div>} 
     </div>
     )

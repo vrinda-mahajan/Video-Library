@@ -1,3 +1,5 @@
 import { Home } from "./home/home";
 import { SingleVideo } from "./singleVideo/singleVideo";
-export { Home, SingleVideo }
+import { Liked } from "./liked/liked";
+import { WatchLater } from "./watchLater/watchLater";
+export { Home, SingleVideo, Liked, WatchLater }
