@@ -2,10 +2,8 @@ import { useVideo } from "contexts/video-context";
 import { useWatchLater } from "contexts/watch-later-context";
 import { useState } from "react"
 import { useNavigate } from "react-router-dom";
-// import { addToLikedVideos} from "utils/apiCalls";
 import "./video-card.css"
 
-// console.log(addToLikedVideos)
 const VideoCard = ({videoDetails}) => {
 
     const {videoClickHandler} = useVideo();

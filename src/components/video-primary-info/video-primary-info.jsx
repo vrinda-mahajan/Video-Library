@@ -1,13 +1,9 @@
 import "./video-primary-info.css"
-// import { addToLikedVideos, removeFromLikedVideos } from "utils/apiCalls"
-// import { useVideo } from "contexts/video-context"
-import { useWatchLater } from "contexts/watch-later-context"
 import { useLike, useVideo } from "contexts"
 
 const VideoPrimaryInfo = ({videoDetails}) => {
-    const {addToWatchLater} = useWatchLater()
     const {addToLikedVideos,removeFromLikedVideos} = useLike()
-    const {state,dispatch} = useVideo()
+    const {state} = useVideo()
     const {_id,title} = videoDetails
 
     return(<div className="primary-info-section">
@@ -24,7 +20,7 @@ const VideoPrimaryInfo = ({videoDetails}) => {
               </button>}
         </div>
         <div className="primary-info-btn">
-            <button onClick={()=>addToWatchLater(videoDetails)} className="btn btn-with-icon">
+            <button className="btn btn-with-icon">
                 <i className="p1-right fa-solid fa-plus"></i>Save
             </button>
         </div>
