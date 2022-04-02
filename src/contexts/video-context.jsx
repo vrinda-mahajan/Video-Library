@@ -34,7 +34,20 @@ const VideoProvider = ({children}) => {
         }
     )(),[])
 
-    const value = {state,dispatch}
+    const videoClickHandler = (video) => {
+        (async() => {
+            try {
+                const response = await axios.get(`/api/video/${video._id}`)
+                if (response.status===200){
+                    dispatch({type:"SET_CURRENT_VIDEO",payload:response.data.video})
+                }
+            } catch (error) {
+                console.log(error)
+            }
+        })();
+    }
+    
+    const value = {state,dispatch,videoClickHandler}
     return (
         <VideoContext.Provider value={value}>
             {children}

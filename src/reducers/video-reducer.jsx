@@ -5,6 +5,7 @@ const initialReducerValue = {
     videos:[],
     likedVideos:[],
     watchLaterVideos:[],
+    currentVideo:{},
 }
 
 const videoReducer = (state,action) => {
@@ -15,6 +16,8 @@ const videoReducer = (state,action) => {
             return {...state,categories:action.payload}
         case "CHANGE_CATEGORY":
             return {...state,selectedCategory:action.payload}
+        case "SET_CURRENT_VIDEO":
+            return {...state,currentVideo:action.payload}
         default:
             return state
     }

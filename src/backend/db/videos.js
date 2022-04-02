@@ -7,7 +7,7 @@ export const videos = [
   {
     _id: uuid(),
     title: "How Much Sun A Plant Needs| Gardening Basics| Part1",
-    url: "https://www.youtube.com/watch?v=Neda0goqbRk",
+    embedId: "Neda0goqbRk",
     creator: "Garden Up",
     category: "Basic Gardening",
     channelLogo:"https://yt3.ggpht.com/ytc/AKedOLReIDY5qE9GtL2bwV9krX2wbmU4X4KT4vjB5eLHSA=s68-c-k-c0x00ffffff-no-rj",
@@ -19,7 +19,7 @@ export const videos = [
   {
     _id: uuid(),
     title: "Must Have Gardening Tools | Essential Gardening Tools Everyone Should Own",
-    url: "https://www.youtube.com/watch?v=aRAgJIkKqYk",
+    embedId: "bVrcleHBD5M",
     creator: "Geeks for green",
     category: "Tools",
     channelLogo:"https://yt3.ggpht.com/cZVy2ViAW3lcszOauIAVuDcs_nbn5eLbD_DgsmvhoouJ-34KsaGR4U7jQCzduuflIfKbNxB2iw=s68-c-k-c0x00ffffff-no-rj",
@@ -31,7 +31,7 @@ export const videos = [
   {
     _id: uuid(),
     title: "Correct Way of Watering Plants| Gardening Basics Part 3",
-    url: "https://www.youtube.com/watch?v=BtnRHP9Cd_E",
+    embedId: "BtnRHP9Cd_E",
     creator: "Garden Up",
     category: "Basic Gardening",
     channelLogo:"https://yt3.ggpht.com/ytc/AKedOLReIDY5qE9GtL2bwV9krX2wbmU4X4KT4vjB5eLHSA=s68-c-k-c0x00ffffff-no-rj",
@@ -42,7 +42,7 @@ export const videos = [
   },{
     _id: uuid(),
     title: "Gardening Tools You MUST Buy &  NEVER buy| Gardening Basics Part 4",
-    url: "https://www.youtube.com/watch?v=aRAgJIkKqYk",
+    embedId: "aRAgJIkKqYk",
     creator: "Garden Up",
     category: "Tools",
     channelLogo:"https://yt3.ggpht.com/ytc/AKedOLReIDY5qE9GtL2bwV9krX2wbmU4X4KT4vjB5eLHSA=s68-c-k-c0x00ffffff-no-rj",
@@ -53,7 +53,7 @@ export const videos = [
   },{
     _id: uuid(),
     title: "MY HOME GARDEN TOUR 🌿 our houseplant collection | Kritika Goel",
-    url: "https://www.youtube.com/watch?v=WTlrytfl9QM",
+    embedId: "WTlrytfl9QM",
     creator: "Kritika Goel",
     category: "Garden Tours",
     channelLogo:"https://yt3.ggpht.com/TA1lRMVrczMPifHMCglkpv9vFr96mK91jWffb56mopk503OVCif5NpUj3N7QvgNTW0NvFQJ5Pw=s68-c-k-c0x00ffffff-no-rj",
@@ -65,7 +65,7 @@ export const videos = [
   {
     _id: uuid(),
     title: "35 GENIUS GARDEN HACKS THAT ACTUALLY WORK",
-    url: "https://www.youtube.com/watch?v=5Z_Lp4h95rc",
+    embedId: "5Z_Lp4h95rc",
     creator: "5-Minute Crafts",
     category: "Hacks",
     channelLogo:"https://yt3.ggpht.com/ytc/AKedOLTitaYOkBL40NqWa-uNxamGlNlUNq1kNxW-EiQ-IA=s68-c-k-c0x00ffffff-no-rj",
@@ -77,7 +77,7 @@ export const videos = [
   {
     _id: uuid(),
     title: "32 Easy Gardening Hacks For Beginners || Plants Growing Tips by 5-Minute DECOR!",
-    url: "https://www.youtube.com/watch?v=bW4Oh7kKVaE",
+    embedId: "bW4Oh7kKVaE",
     creator: "5-Minute Decor",
     category: "Hacks",
     channelLogo:"https://yt3.ggpht.com/ytc/AKedOLRUHXhxgTXhbrtJDfb_mv480JRSsp9ROG7wTfYPIA=s68-c-k-c0x00ffffff-no-rj",
@@ -89,7 +89,7 @@ export const videos = [
   {
     _id: uuid(),
     title: "Vibrant Terrace Gardening | Ideas & Inspiration for Your Home",
-    url: "https://www.youtube.com/watch?v=mEcUfKW8ySw",
+    embedId: "mEcUfKW8ySw",
     creator: "Amlaan Baag",
     category: "Terrace Gardening",
     channelLogo:"https://yt3.ggpht.com/ytc/AKedOLTHPkKcbKB_rHxyCpETX0MxJVn7DcymUp-M3bZf=s68-c-k-c0x00ffffff-no-rj",
@@ -101,7 +101,7 @@ export const videos = [
   {
     _id: uuid(),
     title: "How Much Sun A Plant Needs| Gardening Basics| Part1",
-    url: "https://www.youtube.com/watch?v=EHbsvUHoiCY",
+    embedId: "EHbsvUHoiCY",
     creator: "Garden Up",
     category: "Garden Tours",
     channelLogo:"https://yt3.ggpht.com/ytc/AKedOLReIDY5qE9GtL2bwV9krX2wbmU4X4KT4vjB5eLHSA=s68-c-k-c0x00ffffff-no-rj",
@@ -113,7 +113,7 @@ export const videos = [
   {
     _id: uuid(),
     title: "Rooftop Terrace Garden Transformation | Terrace Makeover | DIY Ideas | Small garden design.",
-    url: "https://www.youtube.com/watch?v=X0QqhFn8HC8",
+    embedId: "X0QqhFn8HC8",
     creator: "High Dose DIY",
     category: "Terrace Gardening",
     channelLogo:"https://yt3.ggpht.com/ytc/AKedOLQEDhWpGAjDOyTfwxNgpPgCccbW7aLK47-G64cyoA=s68-c-k-c0x00ffffff-no-rj",
@@ -125,7 +125,7 @@ export const videos = [
   {
     _id: uuid(),
     title: "How to Use Cocopeat for Plants| Gardening Basics| Part 2",
-    url: "https://www.youtube.com/watch?v=WFu-NRU4kdw",
+    embedId: "WFu-NRU4kdw",
     creator: "Garden Up",
     category: "Basic Gardening",
     channelLogo:"https://yt3.ggpht.com/ytc/AKedOLReIDY5qE9GtL2bwV9krX2wbmU4X4KT4vjB5eLHSA=s68-c-k-c0x00ffffff-no-rj",
@@ -137,7 +137,7 @@ export const videos = [
   {
     _id: uuid(),
     title: "My Garden Tour || Indoor Garden Tour || Actress Sadaa || Sadaa's Garden Tour | Sadaa's Green Life",
-    url: "https://www.youtube.com/watch?v=mQaxX8Livkw",
+    embedId: "mQaxX8Livkw",
     creator: "Sadaa's Green Life",
     category: "Garden Tours",
     channelLogo:"https://yt3.ggpht.com/RFVOetDhcbX0wN1emBPe_HRgqsVBnlxLPWJx6lCUDffvXRDMwn4WGm8sZ9pMX1uELssUko8Qa4o=s68-c-k-c0x00ffffff-no-rj",
@@ -148,20 +148,20 @@ export const videos = [
   },
   {
     _id: uuid(),
-    title: "My Garden Tour In Monsoon | Front Garden With Landscape & Creative Gardening Ideas",
-    url: "https://www.youtube.com/watch?v=SqCQ1k7tSgc&t=104s",
+    title: "Peek Into My Terrace Garden Pre-Winter",
+    embedId: "qdp-TcN-ptk",
     creator: "Amlaan Baag",
     category: "Garden Tours",
     channelLogo:"https://yt3.ggpht.com/ytc/AKedOLTHPkKcbKB_rHxyCpETX0MxJVn7DcymUp-M3bZf=s68-c-k-c0x00ffffff-no-rj",
-    thumbnail:"https://i.ytimg.com/vi/SqCQ1k7tSgc/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLB6fQTtadkrPYDUPRTTwC1tAj4OSw",
-    views:"83K",
+    thumbnail:"https://i.ytimg.com/vi/qdp-TcN-ptk/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBM9hKaGp5LsC1eBOTS5FlH8lquNg",
+    views:"54K",
     uploadTime:"1 years",
-    duration:"13:26"
+    duration:"7:45"
   },
   {
     _id: uuid(),
-    title: "MY TOP 50 SECRET GARDENING IDEAS & HACKS FOR BEGINNERS AND EXPERTS | GARDEN SECRETS",
-    url: "https://www.youtube.com/watch?v=QaxBsqBvfNA",
+    title: "MY TOP 50 GARDENING IDEAS & HACKS FOR BEGINNERS AND EXPERTS | GARDEN SECRETS",
+    embedId: "QaxBsqBvfNA",
     creator: "GARDEN TIPS",
     category: "Hacks",
     channelLogo:"https://yt3.ggpht.com/ytc/AKedOLRDlUSwD6mD77eI8IQ_zA6rxEC94M8D4-NUILKN=s68-c-k-c0x00ffffff-no-rj",

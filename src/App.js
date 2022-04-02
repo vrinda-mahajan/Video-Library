@@ -1,20 +1,25 @@
 import MockmanEs from "mockman-js";
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, useLocation } from "react-router-dom";
 import "./App.css";
-import { Navbar, Sidebar } from "components";
-import { Home } from "pages";
+import { Navbar, ShrinkedSidebar, Sidebar } from "components";
+import { Home, SingleVideo } from "pages";
 
 function App() {
+  const location = useLocation();
+  
   return (
     <div className="App">
     <Navbar />
-    <Sidebar />
+    {
+      !["/watch/"].includes(location.pathname.substring(0,7))? <Sidebar /> :<ShrinkedSidebar />
+    }
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/liked" element={<>Liked</>} />
       <Route path="/watch-later" element={<>Watch Later</>} />
       <Route path="/playlist" element={<>Playlist</>} />
       <Route path="/history" element={<>History</>} />
+      <Route path="/watch/:videoId" element={<SingleVideo />} />
       <Route path="/mock" element={<MockmanEs /> } />
     </Routes>
     </div>
