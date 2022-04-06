@@ -1,0 +1,31 @@
+.playlist-container {
+    margin-left: 30rem;
+    margin-top: 10rem;
+    gap: 5rem;
+}
+.playlist-card {
+    width: 20rem;
+    height: 20rem;
+    border-radius: 2rem;
+    background-color: var(--v2-bg-color);
+    position: relative;
+}
+.playlist-name {
+    cursor: pointer;
+    color: var(--text-color);
+}
+.playlist-name:hover {
+    color: var(--primary-color);
+}
+.playlist-trash-btn {
+    position: absolute;
+    top: 14rem;
+    right: 1rem;
+}
+.playlist-trash-icon{
+    background-color: var(--v2-bg-color);
+    color: var(--text-color);
+}
+.playlist-trash-icon:hover {
+    background-color: var(--v1-bg-color);
+}

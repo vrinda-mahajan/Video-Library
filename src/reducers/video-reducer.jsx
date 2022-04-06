@@ -6,6 +6,8 @@ const initialReducerValue = {
     likedVideos:[],
     watchLaterVideos:[],
     currentVideo:{},
+    playlists:[],
+    currentPlaylist:null,
 }
 
 const videoReducer = (state,action) => {
@@ -22,6 +24,17 @@ const videoReducer = (state,action) => {
             return {...state,likedVideos:action.payload}
         case "SET_WATCH_LATER_VIDEOS":
             return {...state,watchLaterVideos:action.payload}
+        case "SET_PLAYLIST":
+            return {...state,playlists:action.payload}
+        case "SET_PLAYLIST_VIDEO":
+            return {
+                ...state,
+                playlists: [...state.playlists].map((item) =>
+                item._id === action.payload._id ? action.payload : item
+                )
+            };
+        case "SET_CURRENT_PLAYLIST_VIDEO":
+            return {...state,currentPlaylist:action.payload}
         default:
             return state
     }
