@@ -5,7 +5,7 @@ import App from "./App";
 import { makeServer } from "./server";
 import { BrowserRouter as Router } from "react-router-dom";
 import { signupHandler } from "custom hooks";
-import { LikeProvider, PlaylistProvider, VideoProvider, WatchLaterProvider } from "contexts";
+import { HistoryProvider, LikeProvider, PlaylistProvider, VideoProvider, WatchLaterProvider } from "contexts";
 
 // Call make Server
 makeServer();
@@ -18,7 +18,9 @@ ReactDOM.render(
         <WatchLaterProvider>
           <LikeProvider>
             <PlaylistProvider>
-              <App />
+              <HistoryProvider>
+                <App />
+              </HistoryProvider>
             </PlaylistProvider>
           </LikeProvider>
         </WatchLaterProvider>

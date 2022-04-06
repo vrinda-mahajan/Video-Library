@@ -8,6 +8,7 @@ const initialReducerValue = {
     currentVideo:{},
     playlists:[],
     currentPlaylist:null,
+    history:[],
 }
 
 const videoReducer = (state,action) => {
@@ -35,6 +36,8 @@ const videoReducer = (state,action) => {
             };
         case "SET_CURRENT_PLAYLIST_VIDEO":
             return {...state,currentPlaylist:action.payload}
+        case "SET_HISTORY":
+            return {...state,history:action.payload}
         default:
             return state
     }

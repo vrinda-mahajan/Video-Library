@@ -8,7 +8,7 @@ const VideoPrimaryInfo = ({videoDetails}) => {
     const [showPlaylistModal, setShowPlaylistModal] = useState(false);
     const {state} = useVideo()
     const {_id,title} = videoDetails
-    
+
     return(<div className="primary-info-section">
         <h5 className="primary-info-title">{title}</h5>
         <div className="flex-r">
