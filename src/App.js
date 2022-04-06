@@ -2,7 +2,7 @@ import MockmanEs from "mockman-js";
 import { Route, Routes, useLocation } from "react-router-dom";
 import "./App.css";
 import { Navbar, ShrinkedSidebar, Sidebar } from "components";
-import { Home, Liked, Playlist, PlaylistVideo, SingleVideo, WatchLater } from "pages";
+import { History, Home, Liked, Playlist, PlaylistVideo, SingleVideo, WatchLater } from "pages";
 
 function App() {
   const location = useLocation();
@@ -19,7 +19,7 @@ function App() {
       <Route path="/watch-later" element={<WatchLater/>} />
       <Route path="/playlist" element={<Playlist/>} />
       <Route path="/playlist/:playlistId" element={<PlaylistVideo/>} />
-      <Route path="/history" element={<>History</>} />
+      <Route path="/history" element={<History/>} />
       <Route path="/watch/:videoId" element={<SingleVideo />} />
       <Route path="/mock" element={<MockmanEs /> } />
     </Routes>

@@ -68,3 +68,10 @@
     cursor: pointer;
     background-color: var(--v1-bg-color);
 }
+.trash-icon{
+    background-color: var(--v1-bg-color);
+    color: var(--text-color);
+}
+.trash-icon:hover {
+    background-color: var(--v2-bg-color);
+}
