@@ -8,10 +8,10 @@ const History = () => {
     const {getHistory,clearHistory} =useHistory()
     useEffect(()=>{
         getHistory()
-    })
+    },[])
     return (
     <div className="history-container center flex-c">
-        <button onClick={()=>clearHistory()} className="btn btn-with-icon">
+        <button onClick={clearHistory} className="btn btn-with-icon">
             <i className="p1-right fa-solid fa-trash-can"></i>Clear History
         </button>
         <div className="flex-r flex-wrap">
