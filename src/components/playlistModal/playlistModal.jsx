@@ -60,7 +60,7 @@ const PlaylistModal = ({video,handleModal}) => {
                     onChange={(e)=>setPlaylistName(e.target.value)} />
             </div>
             <div className="modal-footer flex-r">
-                <button onClick={()=>addPlaylistHandler()} className="btn btn-primary">Create New Playlist</button>
+                <button onClick={addPlaylistHandler} className="btn btn-primary">Create New Playlist</button>
             </div>
             </div>
         </div>
