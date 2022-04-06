@@ -1,0 +1,15 @@
+.modal-container {
+    background-color: var(--v2-bg-color);
+    width: fit-content;
+}
+.playlist-input {
+    width: 20rem;
+}
+
+.playlist-checkbox-input{
+    width: 5rem;
+    height: 1.6rem;
+}
+.modal-close-btn {
+    color: var(--text-color);
+}

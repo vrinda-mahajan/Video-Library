@@ -1,5 +1,5 @@
-import { useVideo } from "contexts/video-context";
-import { useWatchLater } from "contexts/watch-later-context";
+import { PlaylistModal } from "components";
+import { useVideo, useWatchLater } from "contexts";
 import { useState } from "react"
 import { useNavigate } from "react-router-dom";
 import "./video-card.css"
@@ -9,6 +9,7 @@ const VideoCard = ({videoDetails}) => {
     const {videoClickHandler} = useVideo();
     const {addToWatchLater,removeFromWatchLater} = useWatchLater()
     const [dropdown,setDropdown] = useState(false)
+    const [showPlaylistModal, setShowPlaylistModal] = useState(false);
     const {title,creator,channelLogo,thumbnail,views,uploadTime,duration,embedId} = videoDetails
     const navigate = useNavigate();
     
@@ -46,11 +47,21 @@ const VideoCard = ({videoDetails}) => {
                 <i className="fa-solid fa-clock"></i>
                 <span>Add to watch later</span>
             </li>
+            <li onClick={()=>setShowPlaylistModal(true)} className="dropdown-item">
+                <i className="fa-solid fa-trash"></i>
+                <span>Add to playlist</span>
+            </li>
             <li onClick={()=>removeFromWatchLater(videoDetails._id)} className="dropdown-item">
                 <i className="fa-solid fa-trash"></i>
                 <span>Remove from watch later</span>
             </li>
         </div>} 
+        {showPlaylistModal && (
+            <PlaylistModal
+                handleModal={setShowPlaylistModal}
+                video={videoDetails}
+            />
+            )}
     </div>
     )
 }

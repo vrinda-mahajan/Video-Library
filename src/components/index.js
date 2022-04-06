@@ -6,6 +6,7 @@ import { ShrinkedSidebar } from "./shrinkedSidebar/shrinked-sidebar";
 import { YoutubeEmbed } from "./youtubeEmbed/youtube-embed";
 import { HorizontalVideoCard } from "./card/horizontal-video-card/horizontal-video-card";
 import { VideoPrimaryInfo } from "./video-primary-info/video-primary-info";
+import { PlaylistModal } from "./playlistModal/playlistModal";
 
 export {
     Navbar,
@@ -15,5 +16,6 @@ export {
     ShrinkedSidebar,
     YoutubeEmbed,
     HorizontalVideoCard,
-    VideoPrimaryInfo
+    VideoPrimaryInfo,
+    PlaylistModal,
 }
