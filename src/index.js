@@ -4,16 +4,22 @@ import "./index.css";
 import App from "./App";
 import { makeServer } from "./server";
 import { BrowserRouter as Router } from "react-router-dom";
-import { VideoProvider } from "./contexts/video-context";
+import { signupHandler } from "custom hooks";
+import { LikeProvider, VideoProvider, WatchLaterProvider } from "contexts";
 
 // Call make Server
 makeServer();
+signupHandler();
 
 ReactDOM.render(
   <React.StrictMode>
     <Router>
       <VideoProvider>
-        <App />
+        <WatchLaterProvider>
+          <LikeProvider>
+            <App />
+          </LikeProvider>
+        </WatchLaterProvider>
       </VideoProvider>
     </Router>
   </React.StrictMode>,

@@ -3,9 +3,8 @@
     margin: 1rem;
     gap: 3rem;
 }
-.primary-info-item{
-    cursor: pointer;
-    font-size: 2rem;
+.primary-info-btn{
+    font-size: 2.4rem;
     margin: 1rem;
 }
 .primary-info-title{
