@@ -1,7 +1,10 @@
+import { useAuth } from "contexts"
 import { Link } from "react-router-dom"
 import "./navbar.css"
 
 const Navbar = () => {
+  const {user} = useAuth()
+
     return(
         <nav className="nav-container align-center">
         <div>
@@ -18,11 +21,19 @@ const Navbar = () => {
             <i className="input-icon fas fa-search"></i>
         </div>
   
-        <div className="flex-c center">
-        <Link to="/" className="m1 badge-container">
-            <i className="nav-icon badge-icon fas fa-user"></i>
-        </Link>
-        <span className="nav-icon-text">Account</span>
+        <div className="flex-r nav-icons">
+          {user?<div className="flex-c center">
+          <Link to="/profile" className="m1 badge-container">
+              <i className="nav-icon badge-icon fas fa-user"></i>
+          </Link>
+          <span className="nav-icon-text">{`Hi,${user.firstName}`}</span>
+          </div>
+          :<div className="flex-c center">
+          <Link to="/signin" className="m1 badge-container">
+              <i className="nav-icon badge-icon fas fa-user"></i>
+          </Link>
+          <span className="nav-icon-text">Account</span>
+          </div>}
         </div>
   
         </nav>

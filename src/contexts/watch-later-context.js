@@ -4,12 +4,11 @@ import { useVideo } from "./video-context"
 
 const WatchLaterContext = createContext()
 
-const encodedToken = localStorage.getItem("token")
-
 const WatchLaterProvider = ({children}) => {
     const {dispatch} = useVideo()
 
     const getWatchLaterVideos = async() => {
+        const encodedToken = localStorage.getItem("token")
         try {
             const response = await axios.get(
                 "/api/user/watchlater",
@@ -25,6 +24,7 @@ const WatchLaterProvider = ({children}) => {
         }
     }
     const addToWatchLater = async(video) => {
+    const encodedToken = localStorage.getItem("token")
         try {
             const response = await axios.post (
                 "/api/user/watchlater",
@@ -39,6 +39,7 @@ const WatchLaterProvider = ({children}) => {
         }
     }
     const removeFromWatchLater = async(_id) => {
+        const encodedToken = localStorage.getItem("token")
         try {
             const response = await axios.delete(
                 `/api/user/watchlater/${_id}`,

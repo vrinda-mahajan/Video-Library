@@ -9,6 +9,7 @@ const PlaylistProvider = ({children}) => {
     const token = localStorage.getItem("token")
     
     const getPlaylists = async() => {
+        const token = localStorage.getItem("token")
         try {
             const response = await axios.get(
                 "/api/user/playlists",
@@ -21,6 +22,7 @@ const PlaylistProvider = ({children}) => {
         }
     }
     const addNewPlaylist = async(playlist) => {
+        const token = localStorage.getItem("token")
         try {
             const response = await axios.post(
                 "/api/user/playlists",
