@@ -21,13 +21,7 @@ const Navbar = () => {
             <i className="input-icon fas fa-search"></i>
         </div>
   
-        {/* <div className="flex-c center">
-        <Link to="/signin" className="m1 badge-container">
-            <i className="nav-icon badge-icon fas fa-user"></i>
-        </Link>
-        <span className="nav-icon-text">Account</span>
-        </div> */}
-                  <div className="flex-r nav-icons">
+        <div className="flex-r nav-icons">
           {user?<div className="flex-c center">
           <Link to="/profile" className="m1 badge-container">
               <i className="nav-icon badge-icon fas fa-user"></i>
@@ -40,7 +34,7 @@ const Navbar = () => {
           </Link>
           <span className="nav-icon-text">Account</span>
           </div>}
-          </div>
+        </div>
   
         </nav>
   )
