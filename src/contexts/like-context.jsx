@@ -4,8 +4,8 @@ import { useVideo } from "./video-context"
 
 const LikeContext = createContext()
 
-const encodedToken = localStorage.getItem("token")
 const LikeProvider = ({children}) => {
+    const encodedToken = localStorage.getItem("token")
     const {dispatch} = useVideo();
     
     const getLikedVideos = async() => {

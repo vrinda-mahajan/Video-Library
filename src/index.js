@@ -4,12 +4,10 @@ import "./index.css";
 import App from "./App";
 import { makeServer } from "./server";
 import { BrowserRouter as Router } from "react-router-dom";
-import { signupHandler } from "custom hooks";
-import { HistoryProvider, LikeProvider, PlaylistProvider, VideoProvider, WatchLaterProvider } from "contexts";
+import { AuthProvider, HistoryProvider, LikeProvider, PlaylistProvider, VideoProvider, WatchLaterProvider } from "contexts";
 
 // Call make Server
 makeServer();
-signupHandler();
 
 ReactDOM.render(
   <React.StrictMode>
@@ -19,7 +17,9 @@ ReactDOM.render(
           <LikeProvider>
             <PlaylistProvider>
               <HistoryProvider>
-                <App />
+                <AuthProvider>
+                  <App />
+                </AuthProvider>
               </HistoryProvider>
             </PlaylistProvider>
           </LikeProvider>
@@ -29,3 +29,4 @@ ReactDOM.render(
   </React.StrictMode>,
   document.getElementById("root")
 );
+

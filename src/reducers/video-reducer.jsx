@@ -38,6 +38,8 @@ const videoReducer = (state,action) => {
             return {...state,currentPlaylist:action.payload}
         case "SET_HISTORY":
             return {...state,history:action.payload}
+        case "LOGOUT":
+            return {...state,likedVideos:[],watchLaterVideos:[],playlists:[],currentPlaylist:null,history:[],}
         default:
             return state
     }

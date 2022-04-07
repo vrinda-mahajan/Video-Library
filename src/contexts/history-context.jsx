@@ -6,7 +6,7 @@ const HistoryContext = createContext()
 
 const HistoryProvider = ({children}) => {
     const token =localStorage.getItem("token")
-    const {state,dispatch} = useVideo()
+    const {dispatch} = useVideo()
 
     const getHistory = async() => {
         const response = await axios.get(
